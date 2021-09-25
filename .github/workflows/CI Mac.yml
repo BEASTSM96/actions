@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    name: CI Build
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Test Premake downloader
+        uses: ./premake
+
+      - name: Get the output time
+        run: premake5
