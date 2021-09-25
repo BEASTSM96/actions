@@ -1,9 +1,11 @@
 on: [push]
 
 jobs:
-  hello_world_job:
-    runs-on: [ ubuntu-latest, windows-latest, macos-latest ]
-    name: CL Build
+  build:
+    v:
+      os: [ windows-latest, ubuntu-latest, macos-latest ]
+    runs-on: ${{ v.os }}
+    name: CI Build
     steps:
       - name: Checkout
         uses: actions/checkout@v2
