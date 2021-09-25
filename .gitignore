@@ -1,0 +1,12 @@
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+logs
+*.log
+npm-debug.log*
+
+node_modules/
+jspm_packages/
