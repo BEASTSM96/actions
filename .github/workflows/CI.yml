@@ -14,4 +14,4 @@ jobs:
         uses: ./premake
 
       - name: Run Premake
-        run: premake5 --help
+        run: premake5 --version
