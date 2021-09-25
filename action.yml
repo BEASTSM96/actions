@@ -1,5 +1,8 @@
 name: 'Download Premake'
 description: 'Downloads Premake (may need to build from source)'
+branding:
+  icon: align-justify
+  color: blue
 runs:
   using: 'node12'
   main: 'index.js'
