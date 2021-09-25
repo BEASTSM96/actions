@@ -2,9 +2,7 @@ on: [push]
 
 jobs:
   build:
-    v:
-      os: [ windows-latest, ubuntu-latest, macos-latest ]
-    runs-on: ${{ v.os }}
+    runs-on: [ windows-latest, ubuntu-latest, macos-latest ]
     name: CI Build
     steps:
       - name: Checkout
