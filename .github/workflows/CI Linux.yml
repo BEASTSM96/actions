@@ -13,5 +13,5 @@ jobs:
       - name: Test Premake downloader
         uses: ./premake
 
-      - name: Get the output time
-        run: premake5
+      - name: Run Premake
+        run: premake5 --help
