@@ -1,0 +1,24 @@
+{
+  "name": "bst-actions",
+  "version": "1.0.0",
+  "description": "Some of my actions that I use",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BEASTSM96/actions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BEASTSM96/actions/issues"
+  },
+  "homepage": "https://github.com/BEASTSM96/actions#readme",
+  "dependencies": {
+    "@actions/core": "^1.5.0",
+    "@actions/github": "^5.0.0"
+  }
+}
