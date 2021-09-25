@@ -1,5 +1,0 @@
-name: 'Download Premake'
-description: 'Downloads Premake (may need to build from source)'
-runs:
-  using: 'node12'
-  main: 'index.js'
