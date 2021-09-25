@@ -1,8 +1,10 @@
+name: CI Windows
+
 on: [push]
 
 jobs:
   build:
-    runs-on: [ windows-latest, ubuntu-latest, macos-latest ]
+    runs-on: windows-latest
     name: CI Build
     steps:
       - name: Checkout
