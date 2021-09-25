@@ -1,2 +1,2 @@
-# actions
-Some of my actions that I use
+# Premake Downloader
+Downloads Premake for actions
