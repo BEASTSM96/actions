@@ -29,7 +29,7 @@ async function main() {
 		premakeVer = "beta1";
 	}
 	else {
-		core.setFailed(`Unvaild command line arg: ${args[0]}, to download a specific version use --premake=alpha16`);
+		premakeVer = "alpha16";
 	}
 
 	downloadPremake();
