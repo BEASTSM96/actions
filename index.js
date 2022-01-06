@@ -5,7 +5,7 @@ const toolcache = require( '@actions/tool-cache' );
 var args = process.argv.slice(2);
 let premakeVer = "";
 
-function downloadPremake() {
+async function downloadPremake() {
 	if ( process.platform === 'win32' ) {
 		const fileZip = await toolcache.downloadTool( `https://github.com/premake/premake-core/releases/download/v5.0.0-${premakeVer}/premake-5.0.0-${premakeVer}-windows.zip` );
 		await toolcache.extractZip( fileZip, 'tpremake' );
