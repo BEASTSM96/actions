@@ -4,15 +4,15 @@ const toolcache = require( '@actions/tool-cache' );
 
 async function downloadPremake() {
 	if ( process.platform === 'win32' ) {
-		const fileZip = await toolcache.downloadTool( `https://github.com/premake/premake-core/releases/download/v5.0.0-beta1/premake-5.0.0-beta4-windows.zip` );
+		const fileZip = await toolcache.downloadTool( `https://github.com/premake/premake-core/releases/download/v5.0.0-beta4/premake-5.0.0-beta4-windows.zip` );
 		await toolcache.extractZip( fileZip, 'tpremake' );
 	}
 	else if ( process.platform === 'darwin' ) {
-		const fileZip = await toolcache.downloadTool( `https://github.com/premake/premake-core/releases/download/v5.0.0-beta1/premake-5.0.0-beta4-macosx.tar.gz` );
+		const fileZip = await toolcache.downloadTool( `https://github.com/premake/premake-core/releases/download/v5.0.0-beta4/premake-5.0.0-beta4-macosx.tar.gz` );
 		await toolcache.extractTar( fileZip, 'tpremake' );
 	}
 	else {
-		const fileZip = await toolcache.downloadTool( `https://github.com/premake/premake-core/releases/download/v5.0.0-beta1/premake-5.0.0-beta4-linux.tar.gz` );
+		const fileZip = await toolcache.downloadTool( `https://github.com/premake/premake-core/releases/download/v5.0.0-beta4/premake-5.0.0-beta4-linux.tar.gz` );
 		await toolcache.extractTar( fileZip, 'tpremake' );
 	}
 }
